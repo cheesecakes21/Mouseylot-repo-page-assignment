@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 109, 109);
+  border: 5px solid black;
+  padding: 15px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  gap: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 109, 109);
+  border: 5px solid black;
+  padding: 15px;
+  color: wheat;
+  font-size: 20px;
+  gap: 10px;
+}
+.repos,
+.repodetail-card {
+  background-color: #cabbbb;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.repo-container {
+  width: 80%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.repolink {
+  color: wheat;
+  border-radius: 10px;
+  background-color: #373032;
+  padding: 20px;
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #4b4148;
+}
+.buttondiv {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.page_buttons {
+  background-color: #000000;
+  padding: 10px;
+  border: 5px solid rgb(148, 109, 109);
+  width: 150px;
+  border-radius: 10px;
+  color: wheat;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.page_buttons:hover {
+  cursor: pointer;
+  background-color: #bb8493;
+}
+.repo-name {
+  font-size: 30px;
+}
+.repo_card {
+  color: black;
+  border-radius: 15px;
+  padding: 30px;
+  width: 40%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid #34222f;
+}
+.repo-mini-details {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.repo-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.viewongit {
+  color: wheat;
+  font-size: 16px;
+  text-decoration: none;
+}
+.fullpage {
+  height: 100vh;
+}
+.error {
+  height: 100vh;
+  background-color: #b7b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error h1 {
+  color: rgb(148, 109, 109);
+}
+@media only screen and (max-width: 990px) {
+  .repo_card {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 780px) {
+  .repo_card {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .repo_card {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .repo_card {
+    width: 95%;
+  }
+  .repo-mini-details {
+    gap: 30px;
   }
 }
